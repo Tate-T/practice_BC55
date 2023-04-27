@@ -1,3 +1,5 @@
+/* root vars */
+
 :root {
   --accent-color: #4985ff;
   --title-color: #323232;
@@ -5,6 +7,8 @@
   --secondary-color: #ffffff;
   --background-color: #f6f6f8;
 }
+
+/* reset */
 
 ul {
   list-style: none;
@@ -40,6 +44,34 @@ body {
   margin: 0 auto;
 }
 
+/* utils styles */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(53 / 36);
+}
+
+.btn {
+  min-width: 200px;
+  min-height: 45px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px; 
+  line-height: calc(20 / 16);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Header styles */
+
 .header {
   background-color: black;
   padding: 40px 0;
@@ -60,4 +92,44 @@ body {
   font-size: 16px;
   line-height: calc(20 / 16);
   color: var(--secondary-color);
+}
+
+
+
+/* hero section */
+
+.hero {
+  padding-top: 220px;
+  padding-bottom: 335px;
+  background-color: #323232;
+}
+
+
+
+.hero-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-align: center;
+  color: var(--secondary-color);
+
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: calc(64 / 48);
+  text-align: center;
+  color: var(--secondary-color);
+  
+  margin-bottom: 50px;
+  max-width: 829px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.hero-btn {
+  margin-left: auto;
+  margin-right: auto;
 }
