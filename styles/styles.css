@@ -52,6 +52,14 @@ body {
   line-height: calc(53 / 36);
 }
 
+.section-text{
+  font-weight: 400px;
+  font-size: 16px;
+ line-height: calc(25/16);
+  text-align: center;
+  color: #999999;
+}
+
 .btn {
   min-width: 200px;
   min-height: 45px;
@@ -68,6 +76,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 
 /* Header styles */
 
@@ -137,4 +146,25 @@ body {
 .hero-btn {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* services */
+
+.services{
+  padding-bottom: 105px;
+  padding-top: 110px; 
+}
+.services-title {
+text-align: center;
+max-width: 739px;
+/* margin-left: auto;
+margin-right: auto;
+margin-bottom: 32px; */
+margin: 0 auto 32px;
+}
+
+.services-text{
+  max-width: 730px;
+  text-align: center;
+  margin: 0 auto 70px;
 }
