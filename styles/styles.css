@@ -81,8 +81,12 @@ body {
 /* Header styles */
 
 .header {
-  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 40px 0;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
 
 .header-pages {
@@ -96,6 +100,7 @@ body {
 } */
 
 .header-link {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -103,11 +108,25 @@ body {
 }
 .header-active::after {
   display: block;
+  position: absolute;
+  left: -20px;
+  bottom: -40px;
   content: "";
   height: 2px;
   width: calc(100% + 40px);
   background-color: var(--secondary-color);
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 500ms linear, opacity 500ms linear;
 }
+
+.header-page:hover .header-active::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
 /* hero section */
 
 .hero {
@@ -167,4 +186,21 @@ margin: 0 auto 32px;
   max-width: 730px;
   text-align: center;
   margin: 0 auto 70px;
+}
+
+/* Button */
+
+.scroll-to-top {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
 }
