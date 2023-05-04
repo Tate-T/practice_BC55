@@ -101,6 +101,14 @@
   background-color: #323232;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("photo@2x.png");
+  }
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 16px;
